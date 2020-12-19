@@ -1,3 +1,4 @@
+// if i was using SQL data base this would be a dto file with witch i would compare and use to transfer files to the base, the ingredients would use a virtual key to recipes (many to many)
 const recipesData = [
       {
           id:1,
