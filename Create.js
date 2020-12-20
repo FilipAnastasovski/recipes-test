@@ -1,6 +1,7 @@
 import React from "react"
 import recipesData from "./components/recipesData"
 import ingredientsData from "./components/ingredientsData"
+import NavBar from "./components/Navbar"
 
 import { Form, Button } from 'semantic-ui-react'
 
@@ -31,6 +32,7 @@ handleChange = (e, {name, value}) => {
 render() {
   return (
     <div>
+    <NavBar />
       <Form onSubmit={this.sendDataSomewhere}>
         <Form.Field>
           <Form.Input name="name" value={this.state.name} onChange={this.handleChange}/>
