@@ -1,7 +1,7 @@
 import React from "react"
 import Recipe from "./components/Recipe"
 import recipesData from "./components/recipesData"
-
+import NavBar from "./components/Navbar"
 
 function Detail(chosenId) {
 
@@ -31,6 +31,7 @@ function Detail(chosenId) {
   
 
  return <div> 
+      <NavBar />                                                    
    <table>
           <thead>
             <tr>
