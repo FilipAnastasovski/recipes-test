@@ -5,11 +5,7 @@ import Detail from "../Detail"
 
 
 
-deleteTodo(id) {
-    this.setState((prevState) => ({
-        todos: prevState.todos.filter(item => item.id !== id),
-    }))
-};
+
 
 function Recipe(prop) {
 
@@ -24,6 +20,13 @@ function Recipe(prop) {
   const MAX_LENGTH = 250
  
   const listItems = listOfIng.map((d) => <td ><td>{d.ingredient}, </td></td>);
+    
+    
+    deleteTodo(id) {
+    this.setState((prop) => ({
+        todos: prop.todos.filter(item => item.id !== id),
+    }))
+};
 
 
     const data = <tr>
