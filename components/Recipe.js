@@ -5,6 +5,12 @@ import Detail from "../Detail"
 
 
 
+deleteTodo(id) {
+    this.setState((prevState) => ({
+        todos: prevState.todos.filter(item => item.id !== id),
+    }))
+};
+
 function Recipe(prop) {
 
   
@@ -44,7 +50,7 @@ function Recipe(prop) {
 
       </td>
       <td>
-      <button onClick={(e) => this.deleteRow(prop.id, e)}>Delete</button>
+      <button onClick={() => this.props.deleteTodo(this.props.id)}>Delete</button>
       </td>
  </tr>;
     
